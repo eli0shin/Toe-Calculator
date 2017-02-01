@@ -74,11 +74,11 @@
     </div>
 
     <div id="toe-calculator">
-        <h4>Tire Diameter<input type="number" id="diameter"></h4>
+        <h4><label for="diameter">Tire Diameter</label><input type="number" id="diameter"></h4>
       <div id="input">
-        <h4>Total Toe <input type="number" id="total-toe-input"></h4>
-        <input type="radio" name="measurement" value="degrees" checked>Degrees
-        <input type="radio" name="measurement" value="inches">Inches
+        <h4><label for="total-toe-input">Total Toe</label><input type="number" id="total-toe-input"></h4>
+        <input type="radio" name="measurement" id="degrees" value="degrees" checked><label for="degrees">Degrees</label>
+        <input type="radio" name="measurement" id="inches" value="inches"><label for="inches">Inches</label>
       </div>
       <div id="toe-result">
       </div>
