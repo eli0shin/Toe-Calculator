@@ -3,11 +3,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toe Calculator</title>
-  <link rel="stylesheet" src="style.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body lang="en-us">
   <div id="content">
     <div id="circumference-calculator">
+      <h2>Wheel Size</h2>
       <select id="width" size="6">
         <option value="145">145</option>
         <option value="155">155</option>
@@ -15,11 +16,11 @@
         <option value="175">175</option>
         <option value="185">185</option>
         <option value="195">195</option>
-        <option value="205">205</option>
+        <option value="205" selected>205</option>
         <option value="215">215</option>
         <option value="225">225</option>
         <option value="235">235</option>
-        <option value="245" selected="">245</option>
+        <option value="245">245</option>
         <option value="255">255</option>
         <option value="265">265</option>
         <option value="275">275</option>
@@ -45,10 +46,10 @@
         <option value="70">70</option>
         <option value="65">65</option>
         <option value="60">60</option>
-        <option value="55">55</option>
+        <option value="55" selected>55</option>
         <option value="50">50</option>
         <option value="45">45</option>
-        <option value="40" selected="">40</option>
+        <option value="40">40</option>
         <option value="35">35</option>
         <option value="30">30</option>
         <option value="25">25</option>
@@ -61,9 +62,9 @@
         <option value="12">12</option>
         <option value="13">13</option>
         <option value="14">14</option>
-        <option value="15">15</option>
+        <option value="15" selected>15</option>
         <option value="16">16</option>
-        <option value="17" selected="">17</option>
+        <option value="17">17</option>
         <option value="18">18</option>
         <option value="19">19</option>
         <option value="20">20</option>
@@ -71,14 +72,15 @@
         <option value="22">22</option>
       </select>
     </div>
+
     <div id="toe-calculator">
-      Tire Diameter<input type="number" id="diameter"><br>
-      Total Toe <input type="number" id="total-toe-input">
-      <input type="radio" name="measurement" value="degrees" checked>Degrees
-      <input type="radio" name="measurement" value="inches">Inches
+        <h4>Tire Diameter<input type="number" id="diameter"></h4>
+      <div id="input">
+        <h4>Total Toe <input type="number" id="total-toe-input"></h4>
+        <input type="radio" name="measurement" value="degrees" checked>Degrees
+        <input type="radio" name="measurement" value="inches">Inches
+      </div>
       <div id="toe-result">
-        <div id="one-toe-result"></div>
-        <div id="total-toe-result"></div>
       </div>
 
     </div>

@@ -10,14 +10,13 @@ function totalToe() {
     console.log(this.value);
     if ($('input[name = measurement]:checked').val() === 'degrees') {
         oneToe = (($('#diameter').val() / 2) * Math.sin(Math.PI * (this.value)) / 180) * 2;
-        $('#one-toe-result').text('Toe for One Wheel in Inches: ' + oneToe.toFixed(2));
-        $('#total-toe-result').text('Total Toe in Inches: ' + (oneToe * 2).toFixed(2));
+        $('#toe-result').html('<div>Total Toe in Inches:<h2>' + (oneToe * 2).toFixed(2) + '</h2></div><div>Toe for One Wheel in Inches:<h2>' + oneToe.toFixed(2) + '</h2></div>');
     } else if ($('input[name = measurement]:checked').val() === 'inches') {
         oneToe = Math.atan((this.value) / ($('#diameter').val())) * 180 / Math.PI;
-        $('#one-toe-result').text('Toe for One Wheel in Degrees: ' + oneToe.toFixed(2));
-        $('#total-toe-result').text('Total Toe in Degrees: ' + (oneToe / 2).toFixed(2));
+        $('#toe-result').html('<div> Total Toe in Degrees:<h2>' + (oneToe / 2).toFixed(2) + '</h1></div><div> Toe for One Wheel in Degrees:<h2>' + oneToe.toFixed(2) + '</h2></div>');
     }
 }
+$(diameter());
 $('#circumference-calculator').change(diameter);
 
 $('#total-toe-input').on('keyup', totalToe);
