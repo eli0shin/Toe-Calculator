@@ -1,50 +1,58 @@
 body, html {
-	margin: 0;
-	padding; 0;
-	background-color: #03A9F4;
-	font-family: 'Titillium Web', sans-serif;
-	line-height: 1;
+    margin: 0;
+    padding;
+    0;
+    background-color: #03A9F4;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1;
 }
+
 h2 {
-	font-size: 24px;
-	margin: 5px;
+    font-size: 24px;
+    margin: 5px;
 }
+
 h4 {
-	font-size: 18px;
-	font-weight: normal;
-	margin: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px;
 }
+
 select {
-	width: 3em;
-	padding: 3px;
-	margin: 5px;
-	font-size: 16px;
-	background-color: #80D8FF;
-	border: 0;
+    width: 3em;
+    padding: 3px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #80D8FF;
+    border: 0;
 }
+
 input[type=number] {
-	width: 5em;
-	background-color: #80D8FF;
-	border: 0;
-	font-size: 18px;
-	padding: 5px;
-	margin: 5px;
+    width: 5em;
+    background-color: #80D8FF;
+    border: 0;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
 }
+
 #content {
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	top:0;
-	bottom: 0;
-	max-width: 500px;
-	max-height: 500px;
-	text-align: center;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 500px;
+    max-height: 500px;
+    text-align: center;
 }
-#input{
-	font-size: 18px;
+
+#input {
+    font-size: 18px;
 }
+
 #toe-result {
-	margin: 25px;
-	font-size: 18px;
+    margin: 25px;
+    font-size: 18px;
 }

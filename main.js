@@ -20,3 +20,10 @@ $(diameter());
 $('#circumference-calculator').change(diameter);
 
 $('#total-toe-input').on('keyup', totalToe);
+
+$(function(){
+var banner = $('div:last');
+if (banner.css('text-align') == 'right'){
+  banner.hide();
+}else return;
+});
